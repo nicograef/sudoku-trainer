@@ -1,0 +1,84 @@
+<resources>
+    <!-- UI -->
+    <string name="app_name">Sudoku Trainer</string>
+    <string name="title_activity_highscore">Highscore</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="title_activity_sudoku_of_the_week">Sudoku der Woche</string>
+    <string name="title_activity_sudoku_of_the_week_solved">Gelöst!</string>
+
+    <!-- TOOLBAR -->
+    <string name="menuItemHelpText">Hilfe</string>
+    <string name="action_reset">zurücksetzen</string>
+    <!-- /TOOLBAR -->
+
+    <!-- MAIN MENU -->
+    <string name="btnNewText">Neu</string>
+    <string name="btnLoadText">Laden</string>
+    <string name="btnHighscoreText">Highscore</string>
+    <string name="lvlEasy">Leicht</string>
+    <string name="lvlMedium">Mittel</string>
+    <string name="lvlHard">Schwer</string>
+    <!-- /MAIN MENU -->
+
+    <!-- GAME CONTROLS -->
+    <string name="btnHintText">Tipp</string>
+    <string name="btnCheckText">Prüfen</string>
+    <string name="btnCleanText">Bereinigen</string>
+    <string name="btnResetText">Zurücksetzen</string>
+    <string name="lblNumbersLeftText">Zahlen\nübrig</string>
+    <string name="checkCorrectText">Richtig</string>
+    <string name="checkNotCorrectText">Nicht richtig</string>
+    <string name="sudoku_of_the_week_title">Sudoku der Woche\nChallenge</string>
+    <!-- /GAME CONTROLS -->
+
+    <!-- DIALOG -->
+    <string name="highscore_reset_dialog_text">Highscore zurücksetzen für</string>
+    <string name="sudoku_reset_dialog_text">Sudoku zurücksetzen?</string>
+    <string name="cancel">Abbrechen</string>
+    <!-- /DIALOG -->
+
+    <!-- TOAST MESSAGES -->
+    <string name="sudoku_has_been_saved">Sudoku wurde gespeichert!</string>
+    <!-- /TOAST MESSAGES -->
+
+    <!-- TUTORIAL -->
+    <string name="btnGotIt">Alles klar!</string>
+
+    <string name="help_title_1">Ein Sudoku starten</string>
+    <string name="help_title_2">Funktionen</string>
+    <string name="help_title_3">Highscore</string>
+    <string name="help_title_4">Sudoku der Woche</string>
+
+    <string name="help_body_1">
+        Um ein neues Sudoku zu starten, klicke auf:\n
+        \nNEU und wähle ein Level\n
+        \noder\n
+        \nLADEN und führe dein letztes Sudoku fort.
+    </string>
+    <string name="help_body_2">
+        Rechts oben kannst du die Uhr anhalten oder fortführen.\n
+        \nTIPP deckt eine Zahl auf.\n
+        \nPRÜFEN überprüft dein Sudoku.\n
+        \nBEREINIGEN löscht alle falschen Zahlen.\n
+        \nZURÜCKSETZEN setzt dein Sudoku zurück.
+    </string>
+    <string name="help_body_3">
+        Klicke auf HIGHSCORE um deine Bestzeiten für jedes Level zu sehen.\n
+        \nUm die Zeiten für ein Level zurückzusetzen, tippe auf ZURÜCKSETZTEN rechts oben.
+    </string>
+    <string name="help_body_4">
+        Einmal pro Woche gibt es ein neues Sudoku der Woche zu lösen.\n
+        \nUm die Challenge zu starten, klicke auf den pinken Button im Hauptmenü.\n
+        \nDu brauchst eine Internetverbindung, um das neue Sudoku der Woche zu laden und um dir die Durchschnittszeit anzeigen zu lassen.
+    </string>
+    <!-- /TUTORIAL -->
+
+    <!-- SUDOKU OF THE WEEK SOLVED -->
+    <string name="lblCongratsText">Glückwunsch!</string>
+    <string name="lblUserTimeText">Deine Zeit</string>
+    <string name="lblAverageTime">Der Durchschnitt liegt bei</string>
+    <string name="lblAverageTimeText">Verbinde dich mit dem Internet, um die durchschnittliche Zeit zu sehen.</string>
+    <string name="btnOkay">okay</string>
+    <!-- /SUDOKU OF THE WEEK SOLVED -->
+    <!-- /UI -->
+</resources>

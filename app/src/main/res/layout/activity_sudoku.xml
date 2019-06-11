@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sudoku"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_sudoku_margin"
+    tools:context="de.nicograef.sudokutrainer.SudokuActivity">
+
+    <TextView
+        android:id="@+id/lblNumbersLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99\nnumbers\nleft"
+        style="@style/lblNumbersLeft"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTimer"
+        app:layout_constraintTop_toTopOf="@+id/lblTimer"
+        app:layout_constraintStart_toStartOf="@+id/grid"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/lblTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTimerText"
+        style="@style/lblTimer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:srcCompat="@drawable/ic_timer_off_black_36dp"
+        android:padding="0dp"
+        android:contentDescription="@string/timer_content_description"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTimer"
+        app:layout_constraintTop_toTopOf="@+id/lblTimer"
+        app:layout_constraintEnd_toEndOf="@+id/grid"
+        tools:layout_editor_absoluteX="256dp" />
+
+    <GridLayout
+        android:layout_height="wrap_content"
+        tools:layout_height="wrap_content"
+        android:rowCount="9"
+        android:columnCount="9"
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell0"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell1"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell2"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell3"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell4"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell5"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell6"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell7"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell8"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell9"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell10"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell11"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell12"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell13"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell14"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell15"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell16"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell17"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell18"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell19"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell20"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell21"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell22"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell23"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell24"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell25"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell26"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell27"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell28"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell29"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell30"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell31"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell32"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell33"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell34"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell35"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell36"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell37"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell38"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell39"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell40"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell41"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell42"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell43"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell44"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell45"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell46"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell47"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell48"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell49"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell50"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell51"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell52"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell53"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell54"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell55"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell56"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell57"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell58"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell59"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell60"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell61"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell62"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell63"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell64"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell65"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell66"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell67"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell68"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell69"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell70"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell71"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell72"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell73"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell74"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell75"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell76"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell77"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku8" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell78"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell79"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell80"
+            style="@style/SudokuEditText"
+            android:background="@color/colorSudoku9" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/grid"
+        app:layout_constraintStart_toStartOf="@+id/grid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnHintText"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="@dimen/activity_sudoku_btnTextSize"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btnCheckText"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="@dimen/activity_sudoku_btnTextSize"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btnCleanText"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="@dimen/activity_sudoku_btnTextSize"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btnResetText"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="@dimen/activity_sudoku_btnTextSize"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:minWidth="0dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

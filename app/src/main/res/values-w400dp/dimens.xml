@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="activity_sudoku_btnTextSize">16sp</dimen>
+    <dimen name="activity_sudoku_solved_textSize">20dp</dimen>
+    <dimen name="activity_sudoku_solved_timeTextSize">28dp</dimen>
+</resources>

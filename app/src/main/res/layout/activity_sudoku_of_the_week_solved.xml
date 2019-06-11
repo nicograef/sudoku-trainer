@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="32dp"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCongrats"
+        android:text="@string/lblCongratsText"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textAppearance="@style/lblCongrats"
+        android:textColor="#009688"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblUserTimePre"
+            android:text="@string/lblUserTimeText"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/activity_sudoku_solved_textSize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblUserTime"
+            android:text="11m 08s"
+            android:textSize="@dimen/activity_sudoku_solved_timeTextSize"
+            android:layout_gravity="center"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAverageTime"
+        android:text="@string/lblAverageTimeText"
+        android:textSize="@dimen/activity_sudoku_solved_textSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:text="@string/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOkay"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textSize="@dimen/activity_sudoku_solved_textSize"/>
+
+</LinearLayout>

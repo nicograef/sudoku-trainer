@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="activity_horizontal_margin">48dp</dimen>
+    <dimen name="activity_sudoku_margin">48dp</dimen>
+    <dimen name="activity_sudoku_cell_padding">3dp</dimen>
+    <dimen name="activity_sudoku_btnTextSize">24sp</dimen>
+    <dimen name="activity_sudoku_cellTextSize">36sp</dimen>
+</resources>

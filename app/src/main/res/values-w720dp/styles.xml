@@ -1,0 +1,4 @@
+<resources>
+    <style name="lblTimer" parent="Base.TextAppearance.AppCompat.Display3"/>
+    <style name="lblNumbersLeft" parent="Base.TextAppearance.AppCompat.Headline"/>
+</resources>

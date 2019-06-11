@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>color_logo_background</key>
+        <value>#33bdd7</value>
+    </entry>
+    <entry>
+        <key>sudoku_of_the_week</key>
+        <value>000678050000001007800394020000047209000000310901036005010209700703400000009000081</value>
+    </entry>
+    <entry>
+        <key>week_counter</key>
+        <value>0</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

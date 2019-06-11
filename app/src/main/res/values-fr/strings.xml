@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Sudoku Trainer</string>
+    <string name="title_activity_highscore">Highscore</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="title_activity_sudoku_of_the_week">Sudoku Of The Week</string>
+    <string name="title_activity_sudoku_of_the_week_solved">Solved!</string>
+
+    <string name="btnHintText">allusion</string>
+    <string name="btnResetText">réinitialiser</string>
+    <string name="btnNewText">nouveau</string>
+    <string name="btnLoadText">charger</string>
+    <string name="btnCheckText">vérifier</string>
+    <string name="btnCleanText">nettoyer</string>
+    <string name="lvlEasy">facile</string>
+    <string name="lvlMedium">moyen</string>
+    <string name="lvlHard">difficile</string>
+
+    <string name="lblNumbersLeftText">numéros\nmanquants</string>
+    <string name="checkCorrectText">corriger</string>
+    <string name="checkNotCorrectText">pas correcte</string>
+    <string name="btnHighscoreText">Highscore</string>
+
+    <!-- TOOLBAR -->
+    <string name="menuItemHelpText">Page d\'aide</string>
+    <string name="action_reset">reset</string>
+    <!-- /TOOLBAR -->
+
+    <!-- DIALOG -->
+    <string name="highscore_reset_dialog_text">Reset highscore for</string>
+    <string name="sudoku_reset_dialog_text">Reset sudoku?</string>
+    <string name="cancel">cancel</string>
+    <!-- /DIALOG -->
+
+    <!-- TOAST MESSAGES -->
+    <string name="sudoku_has_been_saved">The sudoku has been saved!</string>
+    <!-- /TOAST MESSAGES -->
+
+    <!-- TUTORIAL -->
+    <string name="btnGotIt">Got It!</string>
+
+    <string name="help_title_1">start a sudoku</string>
+    <string name="help_title_2">controls</string>
+    <string name="help_title_3">highscore</string>
+    <string name="help_title_4">sudoku of the week</string>
+
+    <string name="help_body_1">
+        To start a sudoku click on:\n
+        \nNEW and choose a level\n
+        \nor\n
+        \nLOAD to continue your session.
+    </string>
+    <string name="help_body_2">
+        On the top right you can pause or resume the clock.\n
+        \nHINT unlocks a random number.\n
+        \nCHECK checks for wrong numbers.\n
+        \nCLEAN removes all wrong numbers.\n
+        \nRESET resets the whole sudoku and the clock.
+    </string>
+    <string name="help_body_3">
+        Click on HIGHSCORE to see your best scores for every level.\n
+        \nYou can reset your scores for the currently selected level by tapping RESET on the top right.
+    </string>
+    <string name="help_body_4">
+        Once a week there will be a challenge for you to solve the SUDOKU OF THE WEEK.\n
+        \nClick on the little pink button on the home screen to start the challenge.\n
+        \nYou need an internet connection to load the new sudoku once a week and to see the average time to solve it.
+    </string>
+    <!-- /TUTORIAL -->
+
+    <!-- SUDOKU OF THE WEEK SOLVED -->
+    <string name="lblCongratsText">Congrats!</string>
+    <string name="lblUserTimeText">You solved the sudoku in</string>
+    <string name="lblAverageTime">Average:</string>
+    <string name="lblAverageTimeText">Connect to the internet to see the average time.</string>
+    <string name="btnOkay">okay</string>
+    <string name="sudoku_of_the_week_title">Sudoku Of The Week\nChallenge</string>
+    <!-- /SUDOKU OF THE WEEK SOLVED -->
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="textColorPrimary">#fff</color>
+    <color name="progressBarBackground">#FCE4EC</color>
+    <color name="progressBar">#ff4081</color>
+    <color name="colorSudoku1">#EF5350</color>
+    <color name="colorSudoku2">#AB47BC</color>
+    <color name="colorSudoku3">#5C6BC0</color>
+    <color name="colorSudoku4">#FDD835</color>
+    <color name="colorSudoku5">#26A69A</color>
+    <color name="colorSudoku6">#9CCC65</color>
+    <color name="colorSudoku7">#29B6F6</color>
+    <color name="colorSudoku8">#FFA726</color>
+    <color name="colorSudoku9">#8D6E63</color>
+</resources>

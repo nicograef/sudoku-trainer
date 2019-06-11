@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- UI -->
+    <string name="app_name">Sudoku Trainer</string>
+    <string name="title_activity_highscore">Highscore</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="title_activity_sudoku_of_the_week">Sudoku Of The Week</string>
+    <string name="title_activity_sudoku_of_the_week_solved">Solved!</string>
+
+    <!-- TOOLBAR -->
+    <string name="menuItemHelpText">Help</string>
+    <string name="action_reset">reset</string>
+    <!-- /TOOLBAR -->
+
+    <!-- MAIN MENU -->
+    <string name="btnNewText">New</string>
+    <string name="btnLoadText">Load</string>
+    <string name="btnHighscoreText">Highscore</string>
+    <string name="lvlEasy">Easy</string>
+    <string name="lvlMedium">Medium</string>
+    <string name="lvlHard">Hard</string>
+    <!-- /MAIN MENU -->
+
+    <!-- GAME CONTROLS -->
+    <string name="btnHintText">Hint</string>
+    <string name="btnCheckText">Check</string>
+    <string name="btnCleanText">Clean</string>
+    <string name="btnResetText">Reset</string>
+    <string name="lblTimerText" translatable="false">00:00</string>
+    <string name="lblNumbersLeftText">numbers\nleft</string>
+    <string name="checkCorrectText">correct</string>
+    <string name="checkNotCorrectText">not correct</string>
+    <!-- /GAME CONTROLS -->
+
+    <!-- DIALOG -->
+    <string name="highscore_reset_dialog_text">Reset highscore for</string>
+    <string name="sudoku_reset_dialog_text">Reset sudoku?</string>
+    <string name="cancel">cancel</string>
+    <!-- /DIALOG -->
+
+    <!-- TOAST MESSAGES -->
+    <string name="sudoku_has_been_saved">The sudoku has been saved!</string>
+    <!-- /TOAST MESSAGES -->
+
+    <!-- CONTENT DESCRIPTIONS -->
+    <string name="timer_content_description" translatable="false">start and stop timer</string>
+    <!-- /CONTENT DESCRIPTIONS -->
+
+    <!-- TUTORIAL -->
+    <string name="btnGotIt">Got It!</string>
+
+    <string name="help_title_1">start a sudoku</string>
+    <string name="help_title_2">controls</string>
+    <string name="help_title_3">highscore</string>
+    <string name="help_title_4">sudoku of the week</string>
+
+    <string name="help_body_1">
+        To start a sudoku click on:\n
+        \nNEW and choose a level\n
+        \nor\n
+        \nLOAD to continue your session.
+    </string>
+    <string name="help_body_2">
+        On the top right you can pause or resume the clock.\n
+        \nHINT unlocks a random number.\n
+        \nCHECK checks for wrong numbers.\n
+        \nCLEAN removes all wrong numbers.\n
+        \nRESET resets the whole sudoku and the clock.
+    </string>
+    <string name="help_body_3">
+        Click on HIGHSCORE to see your best scores for every level.\n
+        \nYou can reset your scores for the currently selected level by tapping RESET on the top right.
+    </string>
+    <string name="help_body_4">
+        Once a week there will be a challenge for you to solve the SUDOKU OF THE WEEK.\n
+        \nClick on the little pink button on the home screen to start the challenge.\n
+        \nYou need an internet connection to load the new sudoku once a week and to see the average time to solve it.
+    </string>
+    <!-- /TUTORIAL -->
+
+    <!-- SUDOKU OF THE WEEK -->
+    <string name="lblCongratsText">Congrats!</string>
+    <string name="lblUserTimeText">You solved the sudoku in</string>
+    <string name="lblAverageTime">Average:</string>
+    <string name="lblAverageTimeText">Connect to the internet to see the average time.</string>
+    <string name="btnOkay">okay</string>
+    <string name="sudoku_of_the_week_title">Sudoku Of The Week\nChallenge</string>
+    <!-- /SUDOKU OF THE WEEK -->
+    <!-- /UI -->
+
+
+    <!-- STORAGE KEYS -->
+    <string name="can_load_key" translatable="false">de.nicograef.sudokutrainer.can_load_key</string>
+
+    <!-- SAVE SUDOKU -->
+    <string name="save_sudoku_key" translatable="false">de.nicograef.sudokutrainer.save_sudoku_key</string>
+    <string name="save_init_key" translatable="false">de.nicograef.sudokutrainer.save_init_key</string>
+    <string name="save_time_key" translatable="false">de.nicograef.sudokutrainer.save_time_key</string>
+    <string name="save_level_key" translatable="false">de.nicograef.sudokutrainer.save_level_key</string>
+    <!-- /SAVE SUDOKU -->
+
+    <!-- EASY HIGHSCORE -->
+    <string name="easy_key_1" translatable="false">de.nicograef.sudokutrainer.easy_key_1</string>
+    <string name="easy_key_2" translatable="false">de.nicograef.sudokutrainer.easy_key_2</string>
+    <string name="easy_key_3" translatable="false">de.nicograef.sudokutrainer.easy_key_3</string>
+    <string name="easy_key_4" translatable="false">de.nicograef.sudokutrainer.easy_key_4</string>
+    <string name="easy_key_5" translatable="false">de.nicograef.sudokutrainer.easy_key_5</string>
+    <!-- /EASY HIGHSCORE -->
+
+    <!-- MEDIUM HIGHSCORE -->
+    <string name="medium_key_1" translatable="false">de.nicograef.sudokutrainer.medium_key_1</string>
+    <string name="medium_key_2" translatable="false">de.nicograef.sudokutrainer.medium_key_2</string>
+    <string name="medium_key_3" translatable="false">de.nicograef.sudokutrainer.medium_key_3</string>
+    <string name="medium_key_4" translatable="false">de.nicograef.sudokutrainer.medium_key_4</string>
+    <string name="medium_key_5" translatable="false">de.nicograef.sudokutrainer.medium_key_5</string>
+    <!-- /MEDIUM HIGHSCORE -->
+
+    <!-- HARD HIGHSCORE -->
+    <string name="hard_key_1" translatable="false">de.nicograef.sudokutrainer.hard_key_1</string>
+    <string name="hard_key_2" translatable="false">de.nicograef.sudokutrainer.hard_key_2</string>
+    <string name="hard_key_3" translatable="false">de.nicograef.sudokutrainer.hard_key_3</string>
+    <string name="hard_key_4" translatable="false">de.nicograef.sudokutrainer.hard_key_4</string>
+    <string name="hard_key_5" translatable="false">de.nicograef.sudokutrainer.hard_key_5</string>
+    <!-- /HARD HIGHSCORE -->
+
+    <!-- SUDOKU OF THE WEEK -->
+    <string name="sudoku_of_the_week_key" translatable="false">de.nicograef.sudokutrainer.sudoku_of_the_week_key</string>
+    <string name="week_counter_key" translatable="false">de.nicograef.sudokutrainer.week_counter_key</string>
+    <string name="sudoku_of_the_week_solved_flag_key" translatable="false">de.nicograef.sudokutrainer.sudoku_of_the_week_solved_flag_key</string>
+    <!-- /SUDOKU OF THE WEEK -->
+    <!-- /STORAGE KEYS -->
+
+</resources>
